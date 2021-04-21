@@ -21,5 +21,10 @@ namespace Inheritance2.Entities
         {
             return base.Payment() + 1.1 * AdditionalCharge;
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

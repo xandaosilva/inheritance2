@@ -32,7 +32,7 @@ namespace Inheritance2.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Name + " - $" + Payment().ToString("F2",CI));
+            sb.Append(Name + " - $ " + Payment().ToString("F2",CI));
             return sb.ToString();
         }
     }
