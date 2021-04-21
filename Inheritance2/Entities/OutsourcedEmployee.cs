@@ -16,5 +16,10 @@ namespace Inheritance2.Entities
         {
             AdditionalCharge = additionalCharge;
         }
+
+        public override double Payment()
+        {
+            return base.Payment() + 1.1 * AdditionalCharge;
+        }
     }
 }
